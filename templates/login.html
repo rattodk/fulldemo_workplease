@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodHub - Login</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='mixhtml.css') }}"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    {% include "_top.html" %}
+
+    <div class="signup-page">
+      <div class="signup-form">
+        <div class="signup-icon">
+          <iconify-icon
+            icon="material-symbols:restaurant-menu"
+            width="48"
+            height="48"
+            style="color: var(--primary)"
+          ></iconify-icon>
+        </div>
+
+        <h2 class="signup-style text-center">Welcome Back</h2>
+
+        {% if error %}
+        <div class="alert alert-danger mb-4">{{ error }}</div>
+        {% endif %}
+
+        <form method="POST" action="{{ url_for('login') }}">
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <div class="input-icon">
+              <iconify-icon
+                class="input-icon-left"
+                icon="material-symbols:mail"
+              ></iconify-icon>
+              <input
+                type="email"
+                class="form-control with-icon"
+                id="email"
+                name="email"
+                maxlength="100"
+                title="Enter a valid email address"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="password">Password</label>
+            <div class="input-icon">
+              <iconify-icon
+                class="input-icon-left"
+                icon="material-symbols:lock"
+              ></iconify-icon>
+              <input
+                type="password"
+                class="form-control with-icon"
+                id="password"
+                name="password"
+                minlength="8"
+                maxlength="255"
+                title="Password must be at least 8 characters long"
+                required
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="btn gradient w-100 mb-4">Login</button>
+
+          <p class="text-center text-muted">
+            <a href="{{ url_for('forgot_password') }}" class="text-primary"
+              >Forgot your password?</a
+            >
+          </p>
+
+          <p class="text-center text-muted">
+            Don't have an account?
+            <a href="{{ url_for('view_index') }}" class="text-primary"
+              >Sign up here</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div id="toast"></div>
+
+    {% include "_bottom.html" %}
+  </body>
+</html>

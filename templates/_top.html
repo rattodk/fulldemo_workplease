@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodHub</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <link rel="stylesheet" href="/static/mixhtml.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/",
+          "iconify-icon": "https://code.iconify.design/3/3.0.1/iconify-icon.min.js"
+        }
+      }
+    </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="/static/mixhtml.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- Brand Logo -->
+        <a
+          href="{% if 'restaurant' in user_roles %}{{ url_for('restaurant_dashboard') }}{% elif 'customer' in user_roles %}{{ url_for('customer_dashboard') }}{% elif 'admin' in user_roles %}{{ url_for('admin_dashboard') }}{% elif 'delivery' in user_roles %}{{ url_for('delivery_dashboard') }}{% else %}{{ url_for('dashboard') }}{% endif %}"
+          class="brand"
+        >
+          <iconify-icon icon="material-symbols:food-bank"></iconify-icon>
+          FoodHub
+        </a>
+
+        <!-- Navigation Links -->
+        {% if session.get('user') %} {% set user_roles =
+        session['user']['roles'] %}
+
+        <!-- Role-Based Links -->
+        {% if 'restaurant' in user_roles %}
+        <a href="{{ url_for('restaurant_dashboard') }}" class="nav-link"
+          >Dashboard</a
+        >
+        <a href="{{ url_for('add_menu_item') }}" class="nav-link"
+          >Add Menu Item</a
+        >
+        <a href="{{ url_for('restaurant_profile') }}" class="nav-link"
+          >Profile</a
+        >
+        {% elif 'customer' in user_roles %}
+        <a href="{{ url_for('order_history') }}" class="nav-link"
+          >Order History</a
+        >
+        <a href="{{ url_for('user_profile') }}" class="nav-link">
+          <iconify-icon icon="material-symbols:person"></iconify-icon> Profile
+        </a>
+        {% elif 'admin' in user_roles %}
+        <a href="{{ url_for('admin_dashboard') }}" class="nav-link"
+          >Admin Dashboard</a
+        >
+        {% elif 'delivery' in user_roles %}
+        <a href="{{ url_for('delivery_dashboard') }}" class="nav-link"
+          >Dashboard</a
+        >
+        <!-- My Orders Button for Delivery Users -->
+        <a href="{{ url_for('my_orders') }}" class="nav-link">My Orders</a>
+        <!-- New Button -->
+        <a href="{{ url_for('delivery_profile') }}" class="nav-link">Profile</a>
+        <!-- Profile Link for Delivery User -->
+        {% endif %}
+
+        <!-- Logout -->
+        <a href="{{ url_for('logout') }}" class="nav-link">Logout</a>
+        {% else %}
+        <!-- Guest Links -->
+        <a href="{{ url_for('login') }}" class="nav-link">Login</a>
+        <a href="{{ url_for('view_index') }}" class="sign-up-btn">Sign Up</a>
+        {% endif %}
+      </nav>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+{% include '_top.html' %}
+<script src="{{ url_for('static', filename='js/cart.js') }}"></script>
+<div class="dashboard-layout">
+  <!-- Sidebar: Welcome Section -->
+  <div class="welcome-section">
+    <div class="signup-card user-welcome-card">
+      <div class="signup-icon">
+        <iconify-icon
+          icon="material-symbols:person"
+          width="32"
+          height="32"
+        ></iconify-icon>
+      </div>
+      <h1>Welcome, {{ user.user_name }} {{ user.user_last_name }}</h1>
+      <p class="text-muted">{{ user.user_email }}</p>
+      <a href="{{ url_for('dashboard') }}" class="action-button">
+        <iconify-icon icon="material-symbols:restaurant-outline"></iconify-icon>
+        Restaurants
+      </a>
+      <a href="{{ url_for('order_history') }}" class="action-button">
+        <iconify-icon icon="material-symbols:history-outline"></iconify-icon>
+        Order History
+      </a>
+      <a href="{{ url_for('user_profile') }}" class="action-button">
+        <iconify-icon icon="material-symbols:person-outline"></iconify-icon>
+        Profile
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="card">
+      <h2>Your Order History</h2>
+      {% if orders and orders|length > 0 %}
+      <div class="order-list">
+        {% for order in orders %}
+        <div class="order-card">
+          <div class="order-header">
+            <h3>Order ID: {{ order.order_pk }}</h3>
+            <span class="status-badge {{ order.order_status|lower }}">
+              {{ order.order_status }}
+            </span>
+          </div>
+          <div class="order-details">
+            <p><strong>Date:</strong> {{ order.formatted_date }}</p>
+            <p>
+              <strong>Total:</strong> ${{ "%.2f"|format(order.order_total) }}
+            </p>
+          </div>
+          <button
+            class="btn btn-small btn-outline"
+            onclick="viewOrderDetails('{{ order.order_pk }}')"
+          >
+            View Details
+          </button>
+        </div>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="empty-state">
+        <p>You have no orders yet. Start shopping now!</p>
+        <a href="{{ url_for('dashboard') }}" class="btn btn-primary">
+          Browse Restaurants
+        </a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% include '_bottom.html' %}
+
+<script>
+  function viewOrderDetails(orderId) {
+    alert(`Order details for ${orderId} are not implemented yet!`);
+    // Here, you can implement a modal or navigate to an order details page
+  }
+</script>

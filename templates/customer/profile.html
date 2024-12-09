@@ -1,0 +1,104 @@
+{% include '_top.html' %}
+<script src="{{ url_for('static', filename='js/cart.js') }}"></script>
+<div class="dashboard-layout">
+  <!-- Sidebar (Optional) -->
+  <div class="sidebar">
+    <div class="welcome-section">
+      <div class="signup-card user-welcome-card">
+        <div class="signup-icon">
+          <iconify-icon
+            icon="material-symbols:person"
+            width="32"
+            height="32"
+          ></iconify-icon>
+        </div>
+        <h1>Welcome, {{ user.user_name }} {{ user.user_last_name }}</h1>
+        <p class="text-muted">{{ user.user_email }}</p>
+        <a href="{{ url_for('dashboard') }}" class="action-button">
+          <iconify-icon
+            icon="material-symbols:restaurant-outline"
+          ></iconify-icon>
+          Restaurants
+        </a>
+        <a href="{{ url_for('order_history') }}" class="action-button">
+          <iconify-icon icon="material-symbols:history-outline"></iconify-icon>
+          Order History
+        </a>
+        <a href="{{ url_for('user_profile') }}" class="action-button">
+          <iconify-icon icon="material-symbols:person-outline"></iconify-icon>
+          Profile
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="grid grid-2 gap-4">
+      <!-- Edit Profile -->
+      <div class="card">
+        <h2 class="signup-title text-center">Edit Profile</h2>
+        <form id="editProfileForm" action="/user/profile/edit" method="POST">
+          <div class="form-group">
+            <label for="first_name" class="form-label">First Name:</label>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              class="form-control"
+              value="{{ user['user_name'] }}"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="last_name" class="form-label">Last Name:</label>
+            <input
+              type="text"
+              name="last_name"
+              id="last_name"
+              class="form-control"
+              value="{{ user['user_last_name'] }}"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+      </div>
+
+      <!-- Update Email -->
+      <div class="card">
+        <h2 class="signup-title text-center">Update Email</h2>
+        <form id="editEmailForm" action="/user/profile/email" method="POST">
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              value="{{ user['user_email'] }}"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-secondary">Update Email</button>
+        </form>
+      </div>
+
+      <!-- Delete Account -->
+      <div class="card">
+        <h2 class="signup-title text-center text-danger">Delete Account</h2>
+        <p class="text-muted">
+          Deleting your account will require email verification.
+        </p>
+        <form
+          id="deleteAccountForm"
+          action="/user/profile/delete"
+          method="POST"
+        >
+          <button type="submit" class="btn btn-danger">Delete Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include '_bottom.html' %}

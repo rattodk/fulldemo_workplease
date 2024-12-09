@@ -1,0 +1,14 @@
+{% include "_top.html" %}
+
+<div class="verification-page">
+  <div class="verification-container">
+    <h1 class="verification-title">Email Verified</h1>
+    <p class="verification-message">
+      Your email has been successfully verified. You can now log in to your
+      account.
+    </p>
+    <a href="{{ url_for('login') }}" class="login-button">Login</a>
+  </div>
+</div>
+
+{% include "_bottom.html" %}

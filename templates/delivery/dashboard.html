@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='mixhtml.css') }}"
+    />
+  </head>
+  <body>
+    {% include "_top.html" %}
+
+    <div class="dashboard-layout">
+      <!-- Left Column: Welcome Section -->
+      <div class="left-column">
+        <div class="signup-card user-welcome-card">
+          <div class="user-avatar">
+            <iconify-icon
+              icon="material-symbols:person"
+              width="48"
+              height="48"
+            ></iconify-icon>
+          </div>
+          <h1>Welcome, {{ user.user_name }} {{ user.user_last_name }}</h1>
+          <p class="text-muted">Email: {{ user.user_email }}</p>
+        </div>
+      </div>
+      <!-- Right Column: Orders Section -->
+      <div class="right-column">
+        <section class="orders-section">
+          <h3 class="section-title">Available Orders</h3>
+
+          {% if orders %}
+          <div class="orders-grid">
+            {% for order in orders %}
+            <div class="order-card">
+              <div class="order-header">
+                <strong>Order #{{ order.order_pk }}</strong>
+                <span
+                  class="status-badge {{ 'available' if order.order_delivery_user_fk is none else 'taken' }}"
+                >
+                  {{ 'Available' if order.order_delivery_user_fk is none else
+                  'Taken' }}
+                </span>
+              </div>
+              <div class="order-info">
+                <p><strong>Address:</strong> {{ order.order_address }}</p>
+                <p><strong>City:</strong> {{ order.order_city }}</p>
+                <p>
+                  <strong>Postal Code:</strong> {{ order.order_postal_code }}
+                </p>
+                <p><strong>Items:</strong></p>
+                <ul>
+                  {% for item in order.items_list %}
+                  <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+                <p><strong>Order Date:</strong> {{ order.formatted_date }}</p>
+              </div>
+
+              <!-- Display the "Take Order" button if the order is available -->
+              {% if order.order_delivery_user_fk is none %}
+              <form
+                action="{{ url_for('take_order', order_id=order.order_pk) }}"
+                method="POST"
+              >
+                <button type="submit" class="take-order-btn">Take Order</button>
+              </form>
+              {% else %}
+              <p>This order has been taken by another delivery person.</p>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <p>No orders available to take.</p>
+          {% endif %}
+        </section>
+      </div>
+    </dashboard-layout>
+
+    {% include "_bottom.html" %}
+  </body>
+</html>

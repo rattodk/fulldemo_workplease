@@ -1,0 +1,37 @@
+{% include '_top.html' %}
+
+<div class="restaurants-section">
+  <div class="section-header">
+    <h1>Local Restaurants</h1>
+    <div class="search-container">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search restaurants..."
+      />
+      <button class="search-btn">
+        <iconify-icon icon="material-symbols:search"></iconify-icon>
+      </button>
+    </div>
+  </div>
+
+  <div class="restaurants-grid">
+    <!-- Example restaurant cards - these would be populated from backend -->
+    <div class="restaurant-card">
+      <div class="restaurant-image">
+        <img src="/api/placeholder/400/200" alt="Restaurant" />
+      </div>
+      <div class="restaurant-info">
+        <h3>Restaurant Name</h3>
+        <p class="restaurant-cuisine">Italian • $$</p>
+        <div class="restaurant-rating">
+          <iconify-icon icon="material-symbols:star"></iconify-icon>
+          4.5 (500+ ratings)
+        </div>
+      </div>
+    </div>
+    <!-- More restaurant cards would be generated here -->
+  </div>
+</div>
+
+{% include '_bottom.html' %}

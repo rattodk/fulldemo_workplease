@@ -1,0 +1,46 @@
+{% include '_top.html' %}
+
+<div class="signup-section">
+  <div class="signup-cards">
+    <div class="signup-card">
+      <div class="signup-icon">
+        <iconify-icon icon="material-symbols:person"></iconify-icon>
+      </div>
+      <h2 class="signup-title">Join as Customer</h2>
+      <p class="signup-description">
+        Order amazing food from local restaurants
+      </p>
+      <a href="{{ url_for('view_customer_signup') }}" class="signup-button">
+        Get Started
+      </a>
+    </div>
+
+    <div class="signup-card">
+      <div class="signup-icon">
+        <iconify-icon icon="material-symbols:store"></iconify-icon>
+      </div>
+      <h2 class="signup-title">Register Restaurant</h2>
+      <p class="signup-description">
+        Reach more customers and grow your business
+      </p>
+      <a href="{{ url_for('view_restaurant_signup') }}" class="signup-button">
+        Get Started
+      </a>
+    </div>
+
+    <div class="signup-card">
+      <div class="signup-icon">
+        <iconify-icon icon="material-symbols:delivery-dining"></iconify-icon>
+      </div>
+      <h2 class="signup-title">Become a Driver</h2>
+      <p class="signup-description">
+        Deliver food and earn money on your schedule
+      </p>
+      <a href="{{ url_for('view_delivery_signup') }}" class="signup-button">
+        Get Started
+      </a>
+    </div>
+  </div>
+</div>
+
+{% include '_bottom.html' %}

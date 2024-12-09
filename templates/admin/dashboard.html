@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - FoodHub</title>
+    <link rel="stylesheet" href="/static/mixhtml.css" />
+    <script src="/static/mixhtml.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="{{ url_for('admin_dashboard') }}" class="brand">
+          <iconify-icon icon="material-symbols:food-bank"></iconify-icon>
+          FoodHub
+        </a>
+        <a href="{{ url_for('logout') }}" class="nav-link">Logout</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Admin Dashboard</h1>
+
+        <h3>Manage Users</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>User Name</th>
+              <th>User Email</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for user in users %} {% if 'admin' not in user.roles %}
+            <tr id="user-row-{{ user.user_pk }}">
+              <td>{{ user.user_name }} {{ user.user_last_name }}</td>
+              <td>{{ user.user_email }}</td>
+              <td class="user-status">
+                {% if user.user_blocked_at == 0 %}
+                <span class="badge badge-success">Active</span>
+                {% else %}
+                <span class="badge badge-danger">Blocked</span>
+                {% endif %}
+              </td>
+              <td class="user-actions">
+                {% if user.user_blocked_at == 0 %}
+                <button
+                  class="btn btn-warning"
+                  onclick="blockUser('{{ user.user_pk }}')"
+                >
+                  Block
+                </button>
+                {% else %}
+                <button
+                  class="btn btn-success"
+                  onclick="unblockUser('{{ user.user_pk }}')"
+                >
+                  Unblock
+                </button>
+                {% endif %}
+              </td>
+            </tr>
+            {% endif %} {% endfor %}
+          </tbody>
+        </table>
+
+        <h3>Manage Items</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Item Name</th>
+              <th>Item Description</th>
+              <th>Item Category</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in items %}
+            <tr id="item-row-{{ item.item_pk }}">
+              <td>{{ item.item_name }}</td>
+              <td>{{ item.item_description }}</td>
+              <td>{{ item.item_category }}</td>
+              <td class="item-status">
+                {% if item.item_blocked_at == 0 %}
+                <span class="badge badge-success">Available</span>
+                {% else %}
+                <span class="badge badge-danger">Blocked</span>
+                {% endif %}
+              </td>
+              <td class="item-actions">
+                {% if item.item_blocked_at == 0 %}
+                <button
+                  class="btn btn-warning"
+                  onclick="blockItem('{{ item.item_pk }}')"
+                >
+                  Block
+                </button>
+                {% else %}
+                <button
+                  class="btn btn-success"
+                  onclick="unblockItem('{{ item.item_pk }}')"
+                >
+                  Unblock
+                </button>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script>
+      // Function to block a user
+      function blockUser(userPk) {
+        console.log(`[DEBUG] Attempting to block user with PK: ${userPk}`);
+
+        fetch(`/admin/block_user/${userPk}`, {
+          method: "POST",
+        })
+          .then((response) => {
+            if (response.ok) {
+              response.json().then((data) => {
+                const userRow = document.getElementById(`user-row-${userPk}`);
+                const statusCell = userRow.querySelector(".user-status");
+                const actionCell = userRow.querySelector(".user-actions");
+
+                statusCell.innerHTML =
+                  '<span class="badge badge-danger">Blocked</span>';
+                actionCell.innerHTML = `
+            <button class="btn btn-success" onclick="unblockUser('${userPk}')">
+              Unblock
+            </button>
+          `;
+                // Send the email notification (optional, you can leave this or remove as needed)
+                sendStatusEmail(userPk, "blocked");
+              });
+            } else {
+              console.error(`Error blocking user: ${response.statusText}`);
+              // Instead of alerting the user, log the error
+            }
+          })
+          .catch((error) => {
+            console.error(`[ERROR] Error in fetch request: ${error}`);
+            // Instead of alerting the user, log the error
+          });
+      }
+
+      // Function to unblock a user
+      function unblockUser(userPk) {
+        console.log(`[DEBUG] Attempting to unblock user with PK: ${userPk}`);
+
+        fetch(`/admin/unblock_user/${userPk}`, {
+          method: "POST",
+        })
+          .then((response) => {
+            if (response.ok) {
+              response.json().then((data) => {
+                const userRow = document.getElementById(`user-row-${userPk}`);
+                const statusCell = userRow.querySelector(".user-status");
+                const actionCell = userRow.querySelector(".user-actions");
+
+                statusCell.innerHTML =
+                  '<span class="badge badge-success">Active</span>';
+                actionCell.innerHTML = `
+            <button class="btn btn-warning" onclick="blockUser('${userPk}')">
+              Block
+            </button>
+          `;
+                // Send the email notification (optional, you can leave this or remove as needed)
+                sendStatusEmail(userPk, "unblocked");
+              });
+            } else {
+              console.error(`Error unblocking user: ${response.statusText}`);
+              // Instead of alerting the user, log the error
+            }
+          })
+          .catch((error) => {
+            console.error(`[ERROR] Error in fetch request: ${error}`);
+            // Instead of alerting the user, log the error
+          });
+      }
+
+      // Function to block an item
+      function blockItem(itemPk) {
+        console.log(`[DEBUG] Attempting to block item with PK: ${itemPk}`);
+
+        fetch(`/admin/block_item/${itemPk}`, {
+          method: "POST",
+        })
+          .then((response) => {
+            if (response.ok) {
+              response.json().then((data) => {
+                const itemRow = document.getElementById(`item-row-${itemPk}`);
+                const statusCell = itemRow.querySelector(".item-status");
+                const actionCell = itemRow.querySelector(".item-actions");
+
+                statusCell.innerHTML =
+                  '<span class="badge badge-danger">Blocked</span>';
+                actionCell.innerHTML = `
+            <button class="btn btn-success" onclick="unblockItem('${itemPk}')">
+              Unblock
+            </button>
+          `;
+                // Send the email notification (optional, you can leave this or remove as needed)
+                sendItemStatusEmail(itemPk, "blocked");
+              });
+            } else {
+              console.error(`Error blocking item: ${response.statusText}`);
+              // Instead of alerting the user, log the error
+            }
+          })
+          .catch((error) => {
+            console.error(`[ERROR] Error in fetch request: ${error}`);
+            // Instead of alerting the user, log the error
+          });
+      }
+
+      // Function to unblock an item
+      function unblockItem(itemPk) {
+        console.log(`[DEBUG] Attempting to unblock item with PK: ${itemPk}`);
+
+        fetch(`/admin/unblock_item/${itemPk}`, {
+          method: "POST",
+        })
+          .then((response) => {
+            if (response.ok) {
+              response.json().then((data) => {
+                const itemRow = document.getElementById(`item-row-${itemPk}`);
+                const statusCell = itemRow.querySelector(".item-status");
+                const actionCell = itemRow.querySelector(".item-actions");
+
+                statusCell.innerHTML =
+                  '<span class="badge badge-success">Available</span>';
+                actionCell.innerHTML = `
+            <button class="btn btn-warning" onclick="blockItem('${itemPk}')">
+              Block
+            </button>
+          `;
+                // Send the email notification (optional, you can leave this or remove as needed)
+                sendItemStatusEmail(itemPk, "unblocked");
+              });
+            } else {
+              console.error(`Error unblocking item: ${response.statusText}`);
+              // Instead of alerting the user, log the error
+            }
+          })
+          .catch((error) => {
+            console.error(`[ERROR] Error in fetch request: ${error}`);
+            // Instead of alerting the user, log the error
+          });
+      }
+
+      // Function to send status update emails for users
+      function sendStatusEmail(userPk, status) {
+        fetch(`/admin/send_status_email/${userPk}/${status}`, {
+          method: "POST",
+        })
+          .then((response) => {
+            if (!response.ok) {
+              console.error("Error sending email notification.");
+            }
+          })
+          .catch((error) => {
+            console.error(`[ERROR] Error sending email: ${error}`);
+            // Instead of alerting the user, log the error
+          });
+      }
+
+      // Function to send status update email for items
+      function sendItemStatusEmail(itemPk, status) {
+        fetch(`/admin/send_item_status_email/${itemPk}/${status}`, {
+          method: "POST",
+        })
+          .then((response) => {
+            if (!response.ok) {
+              console.error("Error sending email notification.");
+            }
+          })
+          .catch((error) => {
+            console.error(`[ERROR] Error sending email: ${error}`);
+            // Instead of alerting the user, log the error
+          });
+      }
+    </script>
+  </body>
+</html>

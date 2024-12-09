@@ -1,0 +1,109 @@
+{% include '_top.html' %}
+
+<!-- Checkout Page Content -->
+<div class="checkout-container">
+  <h1>Checkout</h1>
+
+  <!-- Address Selection -->
+  <section class="address-section">
+    <h2>Select Address</h2>
+    <form id="checkoutForm" method="POST" action="{{ url_for('checkout') }}">
+      <div class="saved-addresses">
+        <p>Select a saved address (optional):</p>
+        {% if addresses %} {% for address in addresses %}
+        <label>
+          <input
+            type="radio"
+            name="selected_address"
+            value="{{ address.address_pk }}"
+          />
+          <div class="address-card">
+            <p>{{ address.address_line_1 }}</p>
+            {% if address.address_line_2 %}
+            <p>{{ address.address_line_2 }}</p>
+            {% endif %}
+            <p>
+              {{ address.city }}, {{ address.state }} {{ address.zip_code }}
+            </p>
+          </div>
+        </label>
+        {% endfor %} {% else %}
+        <p>No saved addresses found.</p>
+        {% endif %}
+      </div>
+
+      <!-- Add New Address -->
+      <h2>Or Add a New Address</h2>
+      <div class="new-address">
+        <p>Enter a new address:</p>
+        <input
+          type="text"
+          name="new_address_line_1"
+          id="new_address_line_1"
+          placeholder="Address Line 1"
+        />
+        <input
+          type="text"
+          name="new_address_line_2"
+          id="new_address_line_2"
+          placeholder="Address Line 2 (optional)"
+        />
+        <input type="text" name="new_city" id="new_city" placeholder="City" />
+        <input
+          type="text"
+          name="new_state"
+          id="new_state"
+          placeholder="State"
+        />
+        <input
+          type="text"
+          name="new_zip_code"
+          id="new_zip_code"
+          placeholder="ZIP Code"
+        />
+        <input
+          type="text"
+          name="phonenumber"
+          id="phonenumber"
+          placeholder="Phone Number"
+        />
+        <textarea
+          name="order_notes"
+          id="order_notes"
+          placeholder="Additional notes (optional)"
+        ></textarea>
+      </div>
+
+      <!-- Cart Items -->
+      <section class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cartItems">
+          {% if cart_items and cart_items|length > 0 %} {% for item in
+          cart_items %}
+          <div class="cart-item">
+            <h4>{{ item.name }}</h4>
+            <p>Quantity: {{ item.quantity }}</p>
+            <p>Price: ${{ "%.2f"|format(item.subtotal) }}</p>
+          </div>
+          {% endfor %} {% else %}
+          <p>Your cart is empty</p>
+          {% endif %}
+        </div>
+        <div class="cart-total">
+          <h3>Subtotal: ${{ "%.2f"|format(subtotal) }}</h3>
+          <h3>Delivery Fee: ${{ "%.2f"|format(delivery_fee) }}</h3>
+          <h3>Total: ${{ "%.2f"|format(total_price) }}</h3>
+        </div>
+      </section>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn gradient">Place Order</button>
+    </form>
+  </section>
+</div>
+
+<!-- Include Required Scripts -->
+<script src="{{ url_for('static', filename='js/cart.js') }}"></script>
+<script src="{{ url_for('static', filename='js/order-complete.js') }}"></script>
+
+{% include '_bottom.html' %}

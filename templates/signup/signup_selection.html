@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Selection</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="signup-selection-container">
+      <h1 class="signup-selection-title">Sign Up As</h1>
+      <div class="signup-selection-options">
+        <a
+          href="{{ url_for('customer_signup') }}"
+          class="signup-selection-option customer"
+        >
+          <i class="fas fa-user"></i>
+          <span>Customer</span>
+        </a>
+        <a
+          href="{{ url_for('restaurant_signup') }}"
+          class="signup-selection-option restaurant"
+        >
+          <i class="fas fa-utensils"></i>
+          <span>Restaurant</span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

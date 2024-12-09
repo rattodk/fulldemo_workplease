@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodHub - Delivery Signup</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='mixhtml.css') }}"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    {% include "_top.html" %}
+
+    <div class="signup-page">
+      <div class="signup-form">
+        <div class="signup-icon">
+          <iconify-icon
+            icon="material-symbols:delivery-dining"
+            width="48"
+            height="48"
+            style="color: var(--primary)"
+          ></iconify-icon>
+        </div>
+
+        <h2 class="signup-style text-center">Sign Up as a Delivery Partner</h2>
+
+        {% if error %}
+        <div class="alert alert-danger mb-4">{{ error }}</div>
+        {% endif %} {% if request.args.get('message') %}
+        <div class="alert alert-info mb-4">
+          {{ request.args.get('message') }}
+        </div>
+        {% endif %}
+
+        <form method="POST" action="{{ url_for('signup_delivery') }}">
+          <div class="form-group">
+            <label class="form-label" for="user_name">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="user_name"
+              name="user_name"
+              placeholder="Enter your first name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="user_last_name">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="user_last_name"
+              name="user_last_name"
+              placeholder="Enter your last name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="user_email">Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="user_email"
+              name="user_email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="user_password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="user_password"
+              name="user_password"
+              placeholder="Create a secure password"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="vehicle_type">Vehicle Type</label>
+            <select
+              class="form-control"
+              id="vehicle_type"
+              name="vehicle_type"
+              required
+            >
+              <option value="" disabled selected>
+                Select your vehicle type
+              </option>
+              <option value="car">Car</option>
+              <option value="scooter">Scooter</option>
+              <option value="bike">Bike</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn gradient w-100 mb-4">Sign Up</button>
+
+          <p class="text-center text-muted">
+            Already have an account?
+            <a href="{{ url_for('login') }}" class="text-primary">Login here</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    {% include "_bottom.html" %}
+  </body>
+</html>

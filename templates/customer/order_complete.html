@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order History</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+      }
+      main {
+        padding: 20px;
+      }
+      .order {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 5px;
+      }
+      .order h3 {
+        margin: 0 0 10px;
+      }
+      .order-items {
+        margin-top: 10px;
+      }
+      .order-items ul {
+        list-style: none;
+        padding: 0;
+      }
+      .order-items li {
+        padding: 5px 0;
+      }
+      .no-orders {
+        text-align: center;
+        color: gray;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Your Order History</h1>
+    </header>
+
+    <main>
+      {% if orders and orders|length > 0 %} {% for order in orders %}
+      <div class="order">
+        <h3>Order ID: {{ order.order_pk }}</h3>
+        <p>Date: {{ order.formatted_date }}</p>
+        <p>Status: <strong>{{ order.order_status }}</strong></p>
+        <p>Total: ${{ "%.2f"|format(order.order_total) }}</p>
+
+        <div class="order-items">
+          <h4>Items:</h4>
+          <ul>
+            {% if order.items and order.items|length > 0 %} {% for item in
+            order.items %}
+            <li>
+              {{ item.item_name }} ({{ item.quantity }}) - ${{
+              "%.2f"|format(item.subtotal) }}
+            </li>
+            {% endfor %} {% else %}
+            <li>No items found for this order.</li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %} {% else %}
+      <p class="no-orders">You have no orders yet.</p>
+      {% endif %}
+    </main>
+
+    <footer>
+      <p>&copy; {{ current_year }} Your Company Name</p>
+    </footer>
+  </body>
+</html>

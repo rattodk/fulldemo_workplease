@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodHub - Restaurant</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <link rel="stylesheet" href="/static/mixhtml.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="{{ url_for('static', filename='js/orders.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/menu.js') }}"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="{{ url_for('restaurant_dashboard') }}" class="brand">
+          <iconify-icon icon="material-symbols:restaurant"></iconify-icon>
+          FoodHub
+        </a>
+        <div class="nav-right">
+          <a href="{{ url_for('restaurant_dashboard') }}" class="nav-link">
+            <iconify-icon icon="material-symbols:dashboard"></iconify-icon>
+            Dashboard
+          </a>
+          <a href="{{ url_for('restaurant_menu_add') }}" class="nav-link">
+            <iconify-icon
+              icon="material-symbols:add-circle-outline"
+            ></iconify-icon>
+            Add Menu Item
+          </a>
+          {% if session.get('user') %}
+          <a href="{{ url_for('restaurant_profile') }}" class="nav-link">
+            <iconify-icon icon="material-symbols:person"></iconify-icon>
+            Profile
+          </a>
+          <a href="{{ url_for('logout') }}" class="nav-link">Logout</a>
+          {% endif %}
+        </div>
+
+        <div class="notification-icon" onclick="toggleNotifications()">
+          <iconify-icon
+            icon="material-symbols:notifications"
+            width="24"
+            height="24"
+          ></iconify-icon>
+          <span id="notificationCount" class="notification-badge"></span>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

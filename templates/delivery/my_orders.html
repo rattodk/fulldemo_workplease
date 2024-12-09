@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Orders</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='mixhtml.css') }}"
+    />
+  </head>
+  <body>
+    {% include "_top.html" %}
+
+    <div class="dashboard-layou"t">
+      <!-- Left Column: Welcome Section -->
+      <div class="left-column">
+        <div class="signup-card user-welcome-card">
+          <div class="user-avatar">
+            <iconify-icon
+              icon="material-symbols:person"
+              width="48"
+              height="48"
+            ></iconify-icon>
+          </div>
+          <h1>Welcome, {{ user.user_name }} {{ user.user_last_name }}</h1>
+          <p class="text-muted">Email: {{ user.user_email }}</p>
+          <a href="{{ url_for('delivery_dashboard') }}" class="btn"
+            >Go to Dashboard</a
+          >
+          <!-- Link to dashboard -->
+        </div>
+      </div>
+
+      <!-- Right Column: My Orders Section -->
+      <div class="right-column">
+        <section class="orders-section">
+          <h3 class="section-title">My Orders</h3>
+
+          {% if orders %}
+          <div class="orders-grid">
+            {% for order in orders %}
+            <div class="order-card">
+              <div class="order-header">
+                <strong>Order #{{ order.order_pk }}</strong>
+                <span class="status-badge {{ order.order_status | lower }}"
+                  >{{ order.order_status }}</span
+                >
+              </div>
+              <div class="order-info">
+                <p><strong>Address:</strong> {{ order.order_address }}</p>
+                <p><strong>City:</strong> {{ order.order_city }}</p>
+                <p>
+                  <strong>Postal Code:</strong> {{ order.order_postal_code }}
+                </p>
+                <p><strong>Items:</strong></p>
+                <ul>
+                  {% for item in order.items_list %}
+                  <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+                <p><strong>Order Date:</strong> {{ order.formatted_date }}</p>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <p>You have not taken any orders yet.</p>
+          {% endif %}
+        </section>
+      </div>
+    </dashboard-layout>
+
+    {% include "_bottom.html" %}
+  </body>
+</html>

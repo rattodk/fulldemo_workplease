@@ -1,0 +1,108 @@
+{% include '_top.html' %}
+<script src="{{ url_for('static', filename='js/menu.js') }}"></script>
+<script src="{{ url_for('static', filename='js/cart.js') }}"></script>
+<script src="{{ url_for('static', filename='js/search.js') }}"></script>
+
+<!-- Include Leaflet CSS -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  crossorigin=""
+/>
+
+<!-- Include Leaflet JavaScript -->
+<script
+  src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  crossorigin=""
+></script>
+
+<!-- Load map.js after Leaflet -->
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+
+<!-- Search Section -->
+<div class="search-section">
+  <div class="search-bar-container">
+    <button id="toggleFavorites" class="toggle-btn small-btn">Favorites</button>
+    <button id="toggleMap" class="toggle-btn small-btn">Map View</button>
+    <input
+      type="text"
+      id="searchRestaurantsAndDishes"
+      class="search-bar compact-search"
+      placeholder="Search restaurants or dishes..."
+      oninput="filterRestaurantsAndDishes()"
+    />
+  </div>
+</div>
+
+<!-- Map Section -->
+<div id="map" style="display: none; height: 400px; margin-bottom: 20px"></div>
+
+<!-- Main Dashboard Layout -->
+<div class="dashboard-layout">
+  <div class="sidebar">
+    <div class="welcome-section">
+      <div class="signup-card user-welcome-card">
+        <div class="signup-icon">
+          <iconify-icon
+            icon="material-symbols:person"
+            width="32"
+            height="32"
+          ></iconify-icon>
+        </div>
+        <h1>Welcome, {{ user.user_name }} {{ user.user_last_name }}</h1>
+        <p class="text-muted">{{ user.user_email }}</p>
+        <a href="{{ url_for('dashboard') }}" class="action-button">
+          <iconify-icon
+            icon="material-symbols:restaurant-outline"
+          ></iconify-icon>
+          Restaurants
+        </a>
+        <a href="{{ url_for('order_history') }}" class="action-button">
+          <iconify-icon icon="material-symbols:history-outline"></iconify-icon>
+          Order History
+        </a>
+        <a href="{{ url_for('user_profile') }}" class="action-button">
+          <iconify-icon icon="material-symbols:person-outline"></iconify-icon>
+          Profile
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="restaurant-grid-section">
+    <div class="restaurant-grid" id="restaurantGrid">
+      {% for restaurant in restaurants %}
+      <div class="restaurant-card">
+        <div class="restaurant-info">
+          <h3>{{ restaurant.restaurant_name }}</h3>
+          <p>{{ restaurant.restaurant_address }}</p>
+          <div class="rating">
+            Rating: {{ restaurant.restaurant_rating }} ({{
+            restaurant.restaurant_rating_count }} reviews)
+          </div>
+          <button
+            onclick="loadMenu('{{ restaurant.restaurant_pk }}', event)"
+            class="btn btn-primary mt-2"
+            id="btn-{{ restaurant.restaurant_pk }}"
+            data-loaded="false"
+          >
+            View Menu
+          </button>
+        </div>
+
+        <div
+          id="menu-{{ restaurant.restaurant_pk }}"
+          class="menu-items mt-3"
+          style="display: none"
+        >
+          <div class="menu-content">
+            <!-- Menu items will be loaded dynamically -->
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script src="{{ url_for('static', filename='js/menu.js') }}"></script>
+{% include '_bottom.html' %}

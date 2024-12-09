@@ -1,0 +1,748 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:55:47] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:55:47] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:55:47] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:55:48] "[35m[1mPOST /admin/block_user/07956ea2-8f8f-4d91-9cd1-18732d8f87d7 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:58:14] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:58:14] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:58:14] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:58:16] "[33mPOST /admin/block_user/07956ea2-8f8f-4d91-9cd1-18732d8f87d7 HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:58:23] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:58:23] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:58:23] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+ERROR:root:Error blocking user: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:58:25] "[35m[1mPOST /admin/block_user/07956ea2-8f8f-4d91-9cd1-18732d8f87d7 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:27] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:27] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:27] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to block user with PK: 117186bb-01a4-4041-a05f-9ea7837794d9
+INFO:root:Executing query to block user
+ERROR:root:Error blocking user 117186bb-01a4-4041-a05f-9ea7837794d9: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:29] "[35m[1mPOST /admin/block_user/117186bb-01a4-4041-a05f-9ea7837794d9 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:31] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:31] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:31] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 07956ea2-8f8f-4d91-9cd1-18732d8f87d7
+INFO:root:Executing query to unblock user
+ERROR:root:Error unblocking user 07956ea2-8f8f-4d91-9cd1-18732d8f87d7: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:32] "[35m[1mPOST /admin/unblock_user/07956ea2-8f8f-4d91-9cd1-18732d8f87d7 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:34] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:34] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:34] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:39] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:39] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:39] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:40] "[35m[1mPOST /admin/unblock_user/07956ea2-8f8f-4d91-9cd1-18732d8f87d7 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:42] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:42] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:42] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:48] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:48] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:48] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:56] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to block user with PK: 2f16e8c6-79b5-459d-8a9b-9a4a3dc91bc4
+INFO:root:Executing query to block user
+ERROR:root:Error blocking user 2f16e8c6-79b5-459d-8a9b-9a4a3dc91bc4: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 14:59:58] "[35m[1mPOST /admin/block_user/2f16e8c6-79b5-459d-8a9b-9a4a3dc91bc4 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:02:14] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:02:14] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:02:14] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to block user with PK: 2db5df8c-8f4f-41ce-8c47-77f74515d6a3
+INFO:root:Executing query to block user
+ERROR:root:Error blocking user 2db5df8c-8f4f-41ce-8c47-77f74515d6a3: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:02:15] "[35m[1mPOST /admin/block_user/2db5df8c-8f4f-41ce-8c47-77f74515d6a3 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:02:32] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:02:32] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:02:32] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b
+INFO:root:Executing query to unblock user
+ERROR:root:Error unblocking user 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:02:34] "[35m[1mPOST /admin/unblock_user/00f0a7c0-1bdf-44bd-92ad-fbc592f4211b HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:02:38] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to block user with PK: 2f16e8c6-79b5-459d-8a9b-9a4a3dc91bc4
+INFO:root:Executing query to block user
+ERROR:root:Error blocking user 2f16e8c6-79b5-459d-8a9b-9a4a3dc91bc4: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:02:38] "[35m[1mPOST /admin/block_user/2f16e8c6-79b5-459d-8a9b-9a4a3dc91bc4 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:02:53] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:02:53] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:02:53] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to block user with PK: 19794cba-3b79-4fac-ab0b-1e2430f114ae
+INFO:root:Executing query to block user
+ERROR:root:Error blocking user 19794cba-3b79-4fac-ab0b-1e2430f114ae: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:02:55] "[35m[1mPOST /admin/block_user/19794cba-3b79-4fac-ab0b-1e2430f114ae HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:03:01] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:03:01] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:03:01] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:03:05] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:03:05] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:03:05] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to block user with PK: 131adf82-2fd8-467f-bcba-cc31551f8774
+INFO:root:Executing query to block user
+ERROR:root:Error blocking user 131adf82-2fd8-467f-bcba-cc31551f8774: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:03:06] "[35m[1mPOST /admin/block_user/131adf82-2fd8-467f-bcba-cc31551f8774 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+ERROR:root:Error blocking user: 'NoneType' object is not subscriptable
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:05:13] "[35m[1mPOST /admin/block_user/131adf82-2fd8-467f-bcba-cc31551f8774 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:07:36] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:07:37] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:07:37] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+ERROR:root:Error blocking user: name 'send_email_blocked' is not defined
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:07:38] "[35m[1mPOST /admin/block_user/17c7261b-f5ab-411b-8760-77593b10ec64 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:07:41] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:07:41] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:07:41] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b
+INFO:root:Executing query to unblock user
+ERROR:root:Error unblocking user 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:08:03] "[35m[1mPOST /admin/unblock_user/00f0a7c0-1bdf-44bd-92ad-fbc592f4211b HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:08:05] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:08:05] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:08:05] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+ERROR:root:Error blocking user: name 'send_email_blocked' is not defined
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:08:14] "[35m[1mPOST /admin/block_user/41fe3919-b926-4e75-96be-e44430dde1ad HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:08:17] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:08:17] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:08:17] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:21:37] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:21:37] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:21:37] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+ERROR:root:Error blocking user: name 'send_email_blocked' is not defined
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:21:39] "[35m[1mPOST /admin/block_user/117186bb-01a4-4041-a05f-9ea7837794d9 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:22:40] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:22:41] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:22:41] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+ERROR:root:Error blocking user: name 'send_email_blocked' is not defined
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:22:45] "[35m[1mPOST /admin/block_user/197d6f37-e3f4-4cca-b56a-1ff786d3fcef HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:22:48] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:22:48] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:22:48] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 197d6f37-e3f4-4cca-b56a-1ff786d3fcef
+INFO:root:Executing query to unblock user
+ERROR:root:Error unblocking user 197d6f37-e3f4-4cca-b56a-1ff786d3fcef: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:22:49] "[35m[1mPOST /admin/unblock_user/197d6f37-e3f4-4cca-b56a-1ff786d3fcef HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:22:51] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:22:51] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:22:51] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:29:15] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:29:15] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:29:15] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+ERROR:root:Error blocking user: name 'send_email_blocked' is not defined
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:29:17] "[35m[1mPOST /admin/block_user/19794cba-3b79-4fac-ab0b-1e2430f114ae HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:29:20] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:29:20] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:29:20] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:31:09] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:31:09] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:31:09] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+ERROR:root:Error blocking user: name 'send_email_blocked' is not defined
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:31:10] "[35m[1mPOST /admin/block_user/1a7216c6-d8c7-47de-93b1-9d3688f17d78 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:43:07] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:43:08] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:43:08] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:17] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:17] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:17] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+ERROR:root:Error unblocking user 197d6f37-e3f4-4cca-b56a-1ff786d3fcef: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:19] "[35m[1mPOST /admin/unblock_user/197d6f37-e3f4-4cca-b56a-1ff786d3fcef HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:21] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:21] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:21] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+ERROR:root:Error unblocking user 19794cba-3b79-4fac-ab0b-1e2430f114ae: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:22] "[35m[1mPOST /admin/unblock_user/19794cba-3b79-4fac-ab0b-1e2430f114ae HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:24] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:24] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:24] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+ERROR:root:Error unblocking user 17c7261b-f5ab-411b-8760-77593b10ec64: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:25] "[35m[1mPOST /admin/unblock_user/17c7261b-f5ab-411b-8760-77593b10ec64 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:27] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:27] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:27] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+ERROR:root:Error unblocking user 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:28] "[35m[1mPOST /admin/unblock_user/00f0a7c0-1bdf-44bd-92ad-fbc592f4211b HTTP/1.1[0m" 500 -
+ERROR:root:Error unblocking user 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:29] "[35m[1mPOST /admin/unblock_user/00f0a7c0-1bdf-44bd-92ad-fbc592f4211b HTTP/1.1[0m" 500 -
+ERROR:root:Error unblocking user 07956ea2-8f8f-4d91-9cd1-18732d8f87d7: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:31] "[35m[1mPOST /admin/unblock_user/07956ea2-8f8f-4d91-9cd1-18732d8f87d7 HTTP/1.1[0m" 500 -
+ERROR:root:Error unblocking user 117186bb-01a4-4041-a05f-9ea7837794d9: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:32] "[35m[1mPOST /admin/unblock_user/117186bb-01a4-4041-a05f-9ea7837794d9 HTTP/1.1[0m" 500 -
+ERROR:root:Error unblocking user 131adf82-2fd8-467f-bcba-cc31551f8774: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:34] "[35m[1mPOST /admin/unblock_user/131adf82-2fd8-467f-bcba-cc31551f8774 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:36] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:36] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:36] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+ERROR:root:Error unblocking user 1a7216c6-d8c7-47de-93b1-9d3688f17d78: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:37] "[35m[1mPOST /admin/unblock_user/1a7216c6-d8c7-47de-93b1-9d3688f17d78 HTTP/1.1[0m" 500 -
+ERROR:root:Error unblocking user 41fe3919-b926-4e75-96be-e44430dde1ad: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:39] "[35m[1mPOST /admin/unblock_user/41fe3919-b926-4e75-96be-e44430dde1ad HTTP/1.1[0m" 500 -
+ERROR:root:Error unblocking user d4024ae3-e36d-4833-8439-f615d8ba7e79: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:43] "[35m[1mPOST /admin/unblock_user/d4024ae3-e36d-4833-8439-f615d8ba7e79 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:45] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:45] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:45:45] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:47:29] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:47:29] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:47:29] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+ERROR:root:Error blocking user 70e44db7-3195-48f4-a726-a678b4cf6aa1: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:47:30] "[35m[1mPOST /admin/block_user/70e44db7-3195-48f4-a726-a678b4cf6aa1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:47:32] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:47:32] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:47:32] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+ERROR:root:Error unblocking user 70e44db7-3195-48f4-a726-a678b4cf6aa1: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:47:33] "[35m[1mPOST /admin/unblock_user/70e44db7-3195-48f4-a726-a678b4cf6aa1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:47:35] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:47:35] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 15:47:35] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:09:31] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:09:31] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:09:31] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+ERROR:root:Error blocking user 70e44db7-3195-48f4-a726-a678b4cf6aa1: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:09:33] "[35m[1mPOST /admin/block_user/70e44db7-3195-48f4-a726-a678b4cf6aa1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:09:40] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:09:40] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:09:40] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:05] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:05] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:05] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+ERROR:root:Error blocking user 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:14] "[35m[1mPOST /admin/block_user/00f0a7c0-1bdf-44bd-92ad-fbc592f4211b HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:24] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:24] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:24] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:26] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:26] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:26] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:32] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:32] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:32] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+ERROR:root:Error blocking user 07956ea2-8f8f-4d91-9cd1-18732d8f87d7: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:44:34] "[35m[1mPOST /admin/block_user/07956ea2-8f8f-4d91-9cd1-18732d8f87d7 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:46:14] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:46:14] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:46:14] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:User 07956ea2-8f8f-4d91-9cd1-18732d8f87d7 successfully unblocked
+ERROR:root:Error unblocking user 07956ea2-8f8f-4d91-9cd1-18732d8f87d7: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:46:16] "[35m[1mPOST /admin/unblock_user/07956ea2-8f8f-4d91-9cd1-18732d8f87d7 HTTP/1.1[0m" 500 -
+INFO:root:User 117186bb-01a4-4041-a05f-9ea7837794d9 successfully blocked
+ERROR:root:Error blocking user 117186bb-01a4-4041-a05f-9ea7837794d9: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:46:19] "[35m[1mPOST /admin/block_user/117186bb-01a4-4041-a05f-9ea7837794d9 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:46:21] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:46:21] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:46:21] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:48:54] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:48:54] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:48:54] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:User 131adf82-2fd8-467f-bcba-cc31551f8774 successfully blocked
+ERROR:root:Error blocking user 131adf82-2fd8-467f-bcba-cc31551f8774: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:48:55] "[35m[1mPOST /admin/block_user/131adf82-2fd8-467f-bcba-cc31551f8774 HTTP/1.1[0m" 500 -
+INFO:root:User 131adf82-2fd8-467f-bcba-cc31551f8774 successfully blocked
+ERROR:root:Error blocking user 131adf82-2fd8-467f-bcba-cc31551f8774: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:49:15] "[35m[1mPOST /admin/block_user/131adf82-2fd8-467f-bcba-cc31551f8774 HTTP/1.1[0m" 500 -
+INFO:root:User 117186bb-01a4-4041-a05f-9ea7837794d9 successfully unblocked
+ERROR:root:Error unblocking user 117186bb-01a4-4041-a05f-9ea7837794d9: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:49:17] "[35m[1mPOST /admin/unblock_user/117186bb-01a4-4041-a05f-9ea7837794d9 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:49:19] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:49:19] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:49:19] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:51:32] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:51:32] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:51:32] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:User 07956ea2-8f8f-4d91-9cd1-18732d8f87d7 successfully blocked
+ERROR:root:Error blocking user 07956ea2-8f8f-4d91-9cd1-18732d8f87d7: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:51:34] "[35m[1mPOST /admin/block_user/07956ea2-8f8f-4d91-9cd1-18732d8f87d7 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:52:13] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:52:13] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:52:13] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:User 117186bb-01a4-4041-a05f-9ea7837794d9 successfully blocked
+ERROR:root:Error blocking user 117186bb-01a4-4041-a05f-9ea7837794d9: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:52:15] "[35m[1mPOST /admin/block_user/117186bb-01a4-4041-a05f-9ea7837794d9 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:54:02] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:54:02] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:54:02] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:54:03] "[33mPOST /admin/block_user/17c7261b-f5ab-411b-8760-77593b10ec64 HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:54:50] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:54:50] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:54:50] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+ERROR:root:Error blocking user 17c7261b-f5ab-411b-8760-77593b10ec64: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:54:51] "[35m[1mPOST /admin/block_user/17c7261b-f5ab-411b-8760-77593b10ec64 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:54:53] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:54:53] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:54:53] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+ERROR:root:Error blocking user 19794cba-3b79-4fac-ab0b-1e2430f114ae: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:54:55] "[35m[1mPOST /admin/block_user/19794cba-3b79-4fac-ab0b-1e2430f114ae HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:56:15] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:56:15] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:56:15] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+ERROR:root:Error blocking user 197d6f37-e3f4-4cca-b56a-1ff786d3fcef: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:56:16] "[35m[1mPOST /admin/block_user/197d6f37-e3f4-4cca-b56a-1ff786d3fcef HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:58:27] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:58:27] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:58:27] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to block user with PK: 1a7216c6-d8c7-47de-93b1-9d3688f17d78
+INFO:root:User 1a7216c6-d8c7-47de-93b1-9d3688f17d78 successfully blocked
+ERROR:root:Error blocking user 1a7216c6-d8c7-47de-93b1-9d3688f17d78: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:58:28] "[35m[1mPOST /admin/block_user/1a7216c6-d8c7-47de-93b1-9d3688f17d78 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:58:31] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:58:31] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 16:58:31] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:00:17] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:00:17] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:00:17] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to block user with PK: 2db5df8c-8f4f-41ce-8c47-77f74515d6a3
+INFO:root:User 2db5df8c-8f4f-41ce-8c47-77f74515d6a3 successfully blocked
+ERROR:root:Error blocking user 2db5df8c-8f4f-41ce-8c47-77f74515d6a3: tuple indices must be integers or slices, not str
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:00:18] "[35m[1mPOST /admin/block_user/2db5df8c-8f4f-41ce-8c47-77f74515d6a3 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:05:19] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:05:19] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:05:19] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to block user with PK: 2f16e8c6-79b5-459d-8a9b-9a4a3dc91bc4
+INFO:root:User 2f16e8c6-79b5-459d-8a9b-9a4a3dc91bc4 successfully blocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:05:20] "POST /admin/block_user/2f16e8c6-79b5-459d-8a9b-9a4a3dc91bc4 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:05:23] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:05:23] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:05:23] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:11] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:11] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:11] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to block user with PK: 41fe3919-b926-4e75-96be-e44430dde1ad
+INFO:root:User 41fe3919-b926-4e75-96be-e44430dde1ad successfully blocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:13] "POST /admin/block_user/41fe3919-b926-4e75-96be-e44430dde1ad HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:14] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:14] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:14] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b
+INFO:root:User 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:15] "POST /admin/unblock_user/00f0a7c0-1bdf-44bd-92ad-fbc592f4211b HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:18] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:18] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:18] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 07956ea2-8f8f-4d91-9cd1-18732d8f87d7
+INFO:root:User 07956ea2-8f8f-4d91-9cd1-18732d8f87d7 successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:18] "POST /admin/unblock_user/07956ea2-8f8f-4d91-9cd1-18732d8f87d7 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:19] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:19] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:19] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 117186bb-01a4-4041-a05f-9ea7837794d9
+INFO:root:User 117186bb-01a4-4041-a05f-9ea7837794d9 successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:20] "POST /admin/unblock_user/117186bb-01a4-4041-a05f-9ea7837794d9 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:21] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:21] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:21] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 17c7261b-f5ab-411b-8760-77593b10ec64
+INFO:root:User 17c7261b-f5ab-411b-8760-77593b10ec64 successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:22] "POST /admin/unblock_user/17c7261b-f5ab-411b-8760-77593b10ec64 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:24] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:24] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:24] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 131adf82-2fd8-467f-bcba-cc31551f8774
+INFO:root:User 131adf82-2fd8-467f-bcba-cc31551f8774 successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:24] "POST /admin/unblock_user/131adf82-2fd8-467f-bcba-cc31551f8774 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:26] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:26] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:26] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 19794cba-3b79-4fac-ab0b-1e2430f114ae
+INFO:root:User 19794cba-3b79-4fac-ab0b-1e2430f114ae successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:27] "POST /admin/unblock_user/19794cba-3b79-4fac-ab0b-1e2430f114ae HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:29] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:29] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:29] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 197d6f37-e3f4-4cca-b56a-1ff786d3fcef
+INFO:root:User 197d6f37-e3f4-4cca-b56a-1ff786d3fcef successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:30] "POST /admin/unblock_user/197d6f37-e3f4-4cca-b56a-1ff786d3fcef HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:31] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:31] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:31] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 70e44db7-3195-48f4-a726-a678b4cf6aa1
+INFO:root:User 70e44db7-3195-48f4-a726-a678b4cf6aa1 successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:32] "POST /admin/unblock_user/70e44db7-3195-48f4-a726-a678b4cf6aa1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:33] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:33] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:33] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 1a7216c6-d8c7-47de-93b1-9d3688f17d78
+INFO:root:User 1a7216c6-d8c7-47de-93b1-9d3688f17d78 successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:33] "POST /admin/unblock_user/1a7216c6-d8c7-47de-93b1-9d3688f17d78 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:35] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:35] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:09:35] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:02] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:02] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:02] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 2f16e8c6-79b5-459d-8a9b-9a4a3dc91bc4
+INFO:root:User 2f16e8c6-79b5-459d-8a9b-9a4a3dc91bc4 successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:06] "POST /admin/unblock_user/2f16e8c6-79b5-459d-8a9b-9a4a3dc91bc4 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:07] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:07] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:07] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 41fe3919-b926-4e75-96be-e44430dde1ad
+INFO:root:User 41fe3919-b926-4e75-96be-e44430dde1ad successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:08] "POST /admin/unblock_user/41fe3919-b926-4e75-96be-e44430dde1ad HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:09] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:09] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:09] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 2db5df8c-8f4f-41ce-8c47-77f74515d6a3
+INFO:root:User 2db5df8c-8f4f-41ce-8c47-77f74515d6a3 successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:11] "POST /admin/unblock_user/2db5df8c-8f4f-41ce-8c47-77f74515d6a3 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:12] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:12] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:12] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: e5c6eeb8-fd3f-432f-b85d-0fcc36af6ffa
+INFO:root:User e5c6eeb8-fd3f-432f-b85d-0fcc36af6ffa successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:14] "POST /admin/unblock_user/e5c6eeb8-fd3f-432f-b85d-0fcc36af6ffa HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:16] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:16] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:10:16] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to block user with PK: 2db5df8c-8f4f-41ce-8c47-77f74515d6a3
+INFO:root:User 2db5df8c-8f4f-41ce-8c47-77f74515d6a3 successfully blocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:27:31] "POST /admin/block_user/2db5df8c-8f4f-41ce-8c47-77f74515d6a3 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:27:35] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:27:35] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:27:35] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:12] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:12] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:12] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to block user with PK: 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b
+INFO:root:User 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b successfully blocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:13] "POST /admin/block_user/00f0a7c0-1bdf-44bd-92ad-fbc592f4211b HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:13] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:13] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:13] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b
+INFO:root:User 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:14] "POST /admin/unblock_user/00f0a7c0-1bdf-44bd-92ad-fbc592f4211b HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:14] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:14] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:14] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to block user with PK: 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b
+INFO:root:User 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b successfully blocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:14] "POST /admin/block_user/00f0a7c0-1bdf-44bd-92ad-fbc592f4211b HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:14] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:14] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:14] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b
+INFO:root:User 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:15] "POST /admin/unblock_user/00f0a7c0-1bdf-44bd-92ad-fbc592f4211b HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:15] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:15] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:15] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to block user with PK: 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b
+INFO:root:User 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b successfully blocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:16] "POST /admin/block_user/00f0a7c0-1bdf-44bd-92ad-fbc592f4211b HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:16] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:16] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:16] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:root:Attempting to unblock user with PK: 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b
+INFO:root:User 00f0a7c0-1bdf-44bd-92ad-fbc592f4211b successfully unblocked
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:16] "POST /admin/unblock_user/00f0a7c0-1bdf-44bd-92ad-fbc592f4211b HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:16] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:16] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:28:16] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:32:54] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:32:55] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:32:55] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:32:57] "POST /admin/block_user/00f0a7c0-1bdf-44bd-92ad-fbc592f4211b HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:32:57] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:32:57] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:32:57] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:33:08] "POST /admin/unblock_user/00f0a7c0-1bdf-44bd-92ad-fbc592f4211b HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:33:08] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:33:08] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:33:08] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:37:24] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:37:24] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:37:24] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:40:05] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:40:05] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:40:05] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:40:23] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:40:40] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:40:40] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:40:40] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:40:59] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:40:59] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:40:59] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:41:06] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:41:19] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:41:19] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:41:19] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:41:26] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:42:24] "[35m[1mGET /admin/dashboard HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:42:24] "[36mGET /admin/dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:42:24] "[36mGET /admin/dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:42:25] "GET /admin/dashboard?__debugger__=yes&cmd=resource&f=console.png&s=CfBfluuHstkQkZ7E8qyY HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:42:25] "[36mGET /admin/dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:42:40] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:42:40] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:42:40] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:42:49] "POST /admin/unblock_item/04c3549e-822e-4630-b503-e1c153c6a6f1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:42:49] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:42:50] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:42:50] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:42:58] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:05] "POST /admin/unblock_item/0408514b-1531-49b8-917b-29fa6adad32d HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:05] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:05] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:05] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:07] "POST /admin/unblock_item/0408514b-1531-49b8-917b-29fa6adad32d HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:07] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:07] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:07] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:09] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:09] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:09] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:11] "POST /admin/unblock_item/00b7cae2-94d7-4c94-9384-6a578c6c2634 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:12] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:12] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:12] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:14] "POST /admin/unblock_item/00b7cae2-94d7-4c94-9384-6a578c6c2634 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:15] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:15] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:15] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:16] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:16] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:16] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:17] "POST /admin/unblock_item/00b7cae2-94d7-4c94-9384-6a578c6c2634 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:17] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:17] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:17] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:19] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:19] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:19] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:22] "POST /admin/block_user/d4024ae3-e36d-4833-8439-f615d8ba7e79 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:22] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:22] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:22] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:25] "POST /admin/unblock_user/d4024ae3-e36d-4833-8439-f615d8ba7e79 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:25] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:25] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:43:25] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:44:25] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:44:25] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:44:25] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:44:27] "POST /admin/block_user/e5c6eeb8-fd3f-432f-b85d-0fcc36af6ffa HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:44:27] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:44:27] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:44:27] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:44:29] "POST /admin/unblock_user/e5c6eeb8-fd3f-432f-b85d-0fcc36af6ffa HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:44:29] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:44:29] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:44:29] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:46:59] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:46:59] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:46:59] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:47:03] "POST /admin/unblock_user/e5c6eeb8-fd3f-432f-b85d-0fcc36af6ffa HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:47:03] "[33mPOST /admin/send_status_email/e5c6eeb8-fd3f-432f-b85d-0fcc36af6ffa/unblocked HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:47:07] "POST /admin/unblock_item/00b7cae2-94d7-4c94-9384-6a578c6c2634 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:47:07] "[33mPOST /admin/send_item_status_email/00b7cae2-94d7-4c94-9384-6a578c6c2634/unblocked HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:49:01] "POST /admin/block_user/e5c6eeb8-fd3f-432f-b85d-0fcc36af6ffa HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:49:01] "[33mPOST /admin/send_status_email/e5c6eeb8-fd3f-432f-b85d-0fcc36af6ffa/blocked HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:51:34] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:51:34] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:51:34] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:51:36] "POST /admin/block_user/07956ea2-8f8f-4d91-9cd1-18732d8f87d7 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:51:36] "[33mPOST /admin/send_status_email/07956ea2-8f8f-4d91-9cd1-18732d8f87d7/blocked HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:52:16] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:52:16] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:52:16] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:52:18] "POST /admin/block_user/117186bb-01a4-4041-a05f-9ea7837794d9 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:52:18] "[33mPOST /admin/send_status_email/117186bb-01a4-4041-a05f-9ea7837794d9/blocked HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:52:21] "POST /admin/unblock_user/117186bb-01a4-4041-a05f-9ea7837794d9 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:52:21] "[33mPOST /admin/send_status_email/117186bb-01a4-4041-a05f-9ea7837794d9/unblocked HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:54:46] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:54:46] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:54:46] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:54:48] "POST /admin/unblock_item/00b7cae2-94d7-4c94-9384-6a578c6c2634 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:54:48] "[33mPOST /admin/send_item_status_email/00b7cae2-94d7-4c94-9384-6a578c6c2634/unblocked HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:54:49] "POST /admin/block_item/00b7cae2-94d7-4c94-9384-6a578c6c2634 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:54:49] "[33mPOST /admin/send_item_status_email/00b7cae2-94d7-4c94-9384-6a578c6c2634/blocked HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:54:53] "POST /admin/block_user/e490b860-676c-4b6b-b0a0-a8e3703332b6 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 17:54:53] "[33mPOST /admin/send_status_email/e490b860-676c-4b6b-b0a0-a8e3703332b6/blocked HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 21:54:56] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 21:54:56] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 21:54:56] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 21:54:56] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 21:54:56] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 21:54:56] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 21:55:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 21:55:01] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 21:55:01] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 21:55:02] "[33mGET /8080 HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 21:55:02] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 21:55:02] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:35] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:35] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:35] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:36] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:36] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:36] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:40] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:40] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:44] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:44] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:44] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:48] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:48] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:48] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:54] "GET /delivery/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:54] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:54] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:56] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:56] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:56] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
