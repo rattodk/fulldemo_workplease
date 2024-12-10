@@ -5,12 +5,10 @@ EMAIL_CONFIG = {
     "SENDER_EMAIL": "rattodesigner@gmail.com",
     "SENDER_NAME": "Wolt Web Dev Exam",
     "APP_PASSWORD": "ndzl mqlu ebcf aely",
-    "BASE_URL": "http://127.0.0.1"  # Change this for production/PythonAnywhere
+    "BASE_URL": "https://ratmanjones.pythonanywhere.com"
 }
-
-# Database Configuration
-DB_HOST = 'mysql'
-DB_USER = 'root'
-DB_PASSWORD = 'password'
-DB_NAME = 'company'
-BACKUP_DIR = '.'
+# Database Configuration for PythonAnywhere
+DB_HOST = 'ratmanjones.mysql.pythonanywhere-services.com'
+DB_USER = 'ratmanjones'
+DB_PASSWORD = 'adminpass1'  # Ensure this matches your password
+DB_NAME = 'ratmanjones$default'  # Use your actual database name

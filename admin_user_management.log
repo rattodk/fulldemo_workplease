@@ -746,3 +746,18 @@ INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:56] "[32mGET /logout HTTP/1.1
 INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:56] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:56] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:192.168.65.1 - - [09/Dec/2024 22:52:56] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [10/Dec/2024 00:25:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.65.1 - - [10/Dec/2024 00:25:07] "[36mGET /static/mixhtml.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.65.1 - - [10/Dec/2024 00:25:07] "[36mGET /static/mixhtml.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/config.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/config.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/config.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
+INFO:werkzeug: * Detected change in '/app/config.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 604-803-935
