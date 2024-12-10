@@ -52,6 +52,17 @@
         <a href="{{ url_for('user_profile') }}" class="nav-link">
           <iconify-icon icon="material-symbols:person"></iconify-icon> Profile
         </a>
+
+        <!-- Cart Section for Customers -->
+        <div class="cart-icon-container">
+          <button class="cart-icon" onclick="cart.toggleCart()">
+            <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon>
+            <span id="cartCount" class="cart-count">0</span>
+          </button>
+          <div id="cartSidebar" class="cart-sidebar">
+            <div id="cartContent" class="cart-content"></div>
+          </div>
+        </div>
         {% elif 'admin' in user_roles %}
         <a href="{{ url_for('admin_dashboard') }}" class="nav-link"
           >Admin Dashboard</a
@@ -60,11 +71,8 @@
         <a href="{{ url_for('delivery_dashboard') }}" class="nav-link"
           >Dashboard</a
         >
-        <!-- My Orders Button for Delivery Users -->
         <a href="{{ url_for('my_orders') }}" class="nav-link">My Orders</a>
-        <!-- New Button -->
         <a href="{{ url_for('delivery_profile') }}" class="nav-link">Profile</a>
-        <!-- Profile Link for Delivery User -->
         {% endif %}
 
         <!-- Logout -->
